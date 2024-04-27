@@ -16,10 +16,8 @@ public class LightBoard
       for(int c=0;c<numCols;c++){
         double num= Math.random();
         lights[r][c] = num < 0.4;
-        }
       }
     }
-
   }
 
   /** Evaluates a light in row index row and column index col and returns a status
@@ -42,8 +40,10 @@ public class LightBoard
       return true;
     }
     return lights[row][col];
- 
   }
+
+
+  
   public boolean[][] getLights()
   {
     return lights;
