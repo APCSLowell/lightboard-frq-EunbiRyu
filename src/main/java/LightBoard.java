@@ -15,10 +15,7 @@ public class LightBoard
     for(int r=0;r<numRows;r++){
       for(int c=0;c<numCols;c++){
         double num= Math.random();
-        if(num < 0.4){
-          lights[r][c] == true;
-        }else{
-          lights[r][c] ==false;
+        lights[r][c] = num < 0.4;
         }
       }
     }
@@ -33,7 +30,7 @@ public class LightBoard
   {
     /* to be implemented in part (b) */
     int numOn =0;
-    for(int r=0; r<lights.length[ r++){
+    for(int r=0; r<lights.length; r++){
       if(light[r][col] == true){
         numOn++;
       }
