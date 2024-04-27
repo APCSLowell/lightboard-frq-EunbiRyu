@@ -31,14 +31,14 @@ public class LightBoard
     /* to be implemented in part (b) */
     int numOn =0;
     for(int r=0; r<lights.length; r++){
-      if(light[r][col] == true){
+      if(lights[r][col]){
         numOn++;
       }
     }
     if((lights[row][col]) && (numOn%2 == 0)){
       return false;
     }
-    if((lights[row][col]) && (numOn%3 ==0)){
+    if((lights[row][col]) && (numOn%3 == 0)){
       return true;
     }
     return lights[row][col];
